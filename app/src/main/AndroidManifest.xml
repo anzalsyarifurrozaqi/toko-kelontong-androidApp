@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.toko_kelontong_a11201710423_anzal_syarifur_rozaqi">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".about_me"></activity>
+        <activity android:name=".dashboard" />
+        <activity android:name=".list_barang" />
+        <activity android:name=".admin_list_barang" />
+        <activity android:name=".admin_input_barang" />
+        <activity android:name=".list_transaksi" />
+        <activity android:name=".user_signin" />
+        <activity android:name=".user_signup" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

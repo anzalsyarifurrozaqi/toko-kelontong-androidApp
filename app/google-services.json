@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "921186266800",
+    "firebase_url": "https://tokokelontonga11201710423anzal.firebaseio.com",
+    "project_id": "tokokelontonga11201710423anzal",
+    "storage_bucket": "tokokelontonga11201710423anzal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:921186266800:android:708b61a0e834d3f78f5575",
+        "android_client_info": {
+          "package_name": "com.example.toko_kelontong_a11201710423_anzal_syarifur_rozaqi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "921186266800-judlnfdop9oo00ibopfuf1gq1rlvdvbp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.toko_kelontong_a11201710423_anzal_syarifur_rozaqi",
+            "certificate_hash": "b802dffe03c327de1e35192ce47bcf8c5d0a1bf4"
+          }
+        },
+        {
+          "client_id": "921186266800-jvmue89noogdombr1docrahntt7he4ak.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkq5Fv4AbOqLWu9WyLNgvhqBbQU09LdJ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "921186266800-jvmue89noogdombr1docrahntt7he4ak.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

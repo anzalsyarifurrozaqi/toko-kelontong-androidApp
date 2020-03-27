@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".admin_input_barang">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_margin="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="70dp"
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextNamaBarang"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:hint="Nama Barang"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextSatuan"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:hint="Satuan Barang"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextJumlah"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:hint="Jumlah"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextHarga"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:hint="Harga"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonImgUpload"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:backgroundTint="@color/white"
+            android:text="Pilih Gambar"
+            android:textAppearance="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"
+            app:rippleColor="@color/colorPrimary"
+            app:strokeColor="@color/colorPrimary"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonSaveBarang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:padding="5dp"
+            android:text="Simpan Barang"
+            android:textAppearance="@style/Widget.MaterialComponents.Button"
+            android:textSize="20dp"
+            android:layout_margin="5dp"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonViewBarang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:padding="5dp"
+            android:text="Daftar Barang"
+            android:textAppearance="@style/Widget.MaterialComponents.Button"
+            android:textSize="20dp"
+            android:layout_margin="5dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

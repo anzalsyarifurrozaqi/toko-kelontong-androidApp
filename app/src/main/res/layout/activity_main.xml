@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="vertical"
+        android:layout_margin="25dp"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TOKO"
+            android:textSize="90dp"
+            android:textColor="@color/colorPrimary"
+            android:background="@color/white"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="KELONTONG"
+            android:textSize="50dp"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
+            android:layout_margin="10dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ANZAL SYARIFUR ROZAQI"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimary"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:textAppearance="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:text="Sign in"
+            android:textSize="18dp"
+            android:textColor="@color/colorPrimary"
+            app:rippleColor="@color/colorPrimary"
+            app:strokeColor="@color/colorPrimary"
+            android:backgroundTint="@color/white"
+            android:layout_margin="25dp"
+            android:onClick="SignIn"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Button"
+            android:textAppearance="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:text="Sign up"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            app:rippleColor="@color/colorPrimary"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_margin="25dp"
+            android:onClick="SignUp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

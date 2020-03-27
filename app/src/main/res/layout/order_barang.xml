@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:cardBackgroundColor="#16a085"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:text="Order Page"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="370dp"
+                android:layout_margin="20dp"
+                android:id="@+id/gambar_barang"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="nama barang"
+                    android:textSize="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="2dp"
+                    android:id="@+id/nama_barang"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="harga barang"
+                    android:textSize="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="2dp"
+                    android:id="@+id/harga_barang"
+                    />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                >
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Jumlah Stock"
+                    android:textSize="18dp"
+                    />
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="18dp"
+                    />
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="18dp"
+                    android:id="@+id/jumlah_stock"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                >
+                <com.google.android.material.button.MaterialButton
+                    android:textAppearance="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:backgroundTint="@color/white"
+                    app:strokeColor="@color/colorPrimary"
+                    android:textColor="@color/colorPrimary"
+                    android:text="-"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    app:rippleColor="@color/colorPrimary"
+                    android:id="@+id/minButtonOrder"
+                    />
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:textAlignment="center"
+                    android:textSize="30dp"
+                    android:id="@+id/jmlOrder"
+                    />
+                <com.google.android.material.button.MaterialButton
+                    android:textAppearance="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:backgroundTint="@color/white"
+                    app:strokeColor="@color/colorPrimary"
+                    android:textColor="@color/colorPrimary"
+                    android:text="+"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    app:rippleColor="@color/colorPrimary"
+                    android:id="@+id/plusButtonOrder"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                >
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Total"
+                    android:textSize="18dp"
+                    />
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textSize="18dp"
+                    />
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Rp. 0"
+                    android:textSize="18dp"
+                    android:id="@+id/total"
+                    />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:textAppearance="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:text="order"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+                    app:rippleColor="@color/white"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:layout_margin="25dp"
+                    android:id="@+id/buttonOrder"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
